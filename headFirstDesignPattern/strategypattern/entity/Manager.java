@@ -6,7 +6,7 @@ public class Manager extends Employee {
 
 
     public Manager(String employeeId) {
-        super(new ShopAuth(), employeeId); // ✅ 直接傳遞 ShopAuth，避免變數遮蔽
+        super(new ShopAuth(), employeeId);
     }
     public AuthenticationInterface getAuthentication() {
         return authentication;
